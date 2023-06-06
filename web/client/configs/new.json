@@ -4,7 +4,7 @@
     "projection": "EPSG:900913",
 		"units": "m",
 		"center": {"x": 1250000.000000, "y": 5370000.000000, "crs": "EPSG:900913"},
-    "zoom":5,
+    "zoom":6,
 		"maxExtent": [
 			-20037508.34, -20037508.34,
 			20037508.34, 20037508.34
@@ -18,6 +18,13 @@
 				"group": "background",
         "visibility": true
 			},
+      {
+        "name": "Google Maps",
+        "type": "google",
+        "visibility": false,
+        "source": "google",
+        "apiKey": "AIzaSyDVWwnb8PxtFjqLXATjEtIozN-ZDBMMIng"
+      },
       {
         "type": "tileprovider",
         "title": "NASAGIBS Night 2012",

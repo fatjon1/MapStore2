@@ -77,7 +77,7 @@ class Selector extends React.Component {
             }
         }
         const currentCRS = normalizeSRS(this.props.selected, this.props.filterAllowedCRS);
-        const compatibleCrs = ['EPSG:4326', 'EPSG:3857', 'EPSG:900913'];
+        const compatibleCrs = ['EPSG:4326', 'EPSG:3857', 'EPSG:6870', 'EPSG:900913'];
         const allowedLayerTypes = ["wms", "osm", "tileprovider", "empty"];
         const changeCrs = (crs) => {
             if ( indexOf(compatibleCrs, crs) > -1 || indexOf(allowedLayerTypes, this.props.currentBackground.type) > -1 ||
